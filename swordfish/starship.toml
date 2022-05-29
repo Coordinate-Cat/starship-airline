@@ -1,0 +1,44 @@
+add_newline = false
+scan_timeout = 10
+
+format = """
+(fg:#fff1cf)$username$directory$git_branch$git_status$time$character"""
+
+right_format = """$battery$status"""
+
+[username]
+format = "[](fg:#D43C3C)[ $user ](fg:#393233 bg:#D43C3C bold)[ ](fg:#D43C3C bg:#393233 bold)"
+show_always = true
+disabled = false
+
+[directory]
+format = "[$home_symbol](fg:#D43C3C bg:#393233)[$path](fg:#D43C3C bg:#393233)[$read_only](fg:#D43C3C bg:#393233)[  ](fg:#896356 bg:#393233 bold)"
+truncation_symbol = "…/"
+truncate_to_repo = false
+truncation_length = 100
+home_symbol = " "
+
+[git_branch]
+format = "[$symbol](fg:#D43C3C bg:#393233)[$branch](fg:#D43C3C bg:#393233)[  ](fg:#896356 bg:#393233 bold)"
+symbol = " "
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]](fg:#D43C3C bg:#393233)[  ](fg:#896356 bg:#393233 bold))'
+
+[time]
+format = '[\[$time\] ](fg:#D43C3C bg:#393233)[](fg:#D43C3C bg:#393233 bold)'
+utc_time_offset = "local"
+time_format = "%T"
+disabled = false
+time_range = "-"
+
+[character]
+success_symbol = "[  ](bold fg:#393233 bg:#D43C3C)[](bg:#D43C3C)[](fg:#D43C3C bold)"
+error_symbol = "[  ](bold fg:#393233 bg:#D43C3C)[](bg:#D43C3C)[](fg:#D43C3C bold)"
+
+[battery]
+full_symbol = " "
+format = "[ $symbol$percentage ](fg:#D43C3C)"
+
+[[battery.display]]
+threshold = 100
