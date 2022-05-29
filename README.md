@@ -11,6 +11,8 @@
 ## ultra
 ## golgoda
 ## zeropoint
+<img width="672" alt="スクリーンショット 2022-05-29 13 10 58" src="https://user-images.githubusercontent.com/42393004/170851832-460d1f12-7475-4b9f-b677-b7d7752861ad.png">
+
 ## chozo
 ## malenia
 ## elle
